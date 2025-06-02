@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f9;
+}
+header {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.main-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.profile-section {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+.foto-perfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    object-fit: cover;
+}
+.profile-content {
+    flex: 1;
+}
+.profile-content fieldset {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+.profile-content legend h2 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+.profile-content p {
+    font-size: 1rem;
+    text-align: justify;
+    color: #555;
+}
+.container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.list-section {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.list-section h3 {
+    color: #2980b9;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+.list-section ul,
+.list-section ol {
+    padding-left: 1.5rem;
+}
+.list-section li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+.schedule-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+.schedule-section h2 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+thead {
+    background: #3498db;
+    color: white;
+}
+th, td {
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+}
+tbody tr:hover {
+    background-color: #b3d3f3;
+}
+.contact-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+.contact-section h2 {
+    color: #2980b9;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contact-section fieldset {
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.contact-section legend {
+    color: #2980b9;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.3);
+}
+button[type="submit"] {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #2980b9, #1f639a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52,152,219,0.4);
+}
+footer {
+    background: linear-gradient(45deg, #4b6782, #3498db);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .foto-perfil img {
+        width: 150px;
+        height: 150px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .social-icons {
+        gap: 1rem;
+    }
+}

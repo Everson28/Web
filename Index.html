@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer sito Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>INFORMACIÓN PERSONAL</h1>
+    </header>
+
+    <div class="main-container">
+        <section class="profile-section">
+            <div class="foto-perfil">
+                <img src="yo1.png" alt="Foto de Everson De Armas">
+            </div>
+            <div class="profile-content">
+                <fieldset>
+                    <legend><h2>Perfil Profesional</h2></legend>
+                    <p>Soy Everson De Armas, técnico en sistemas informáticos con experiencia en marketing digital y campañas publicitarias en plataformas como Google Ads, Meta y TikTok. También he trabajado en tiendas en línea enfocadas en las ventas de artesanías al exterior en plataformas como WordPress.</p>
+                </fieldset>
+            </div>
+        </section>
+        <section class="container">
+            <div class="list-section">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Ver películas</li>
+                    <li>Ir a la playa</li>
+                    <li>Jugar videojuegos</li>
+                </ul>
+            </div>
+
+            <div class="list-section">
+                <h3>Tareas Pendientes</h3>
+                <ol>
+                    <li>Culminar el bootcamp con éxito</li>
+                    <li>Mejorar cada día</li>
+                    <li>Asistir a todas las clases y entregar los proyectos a tiempo</li>
+                </ol>
+            </div>
+        </section>
+        <section class="schedule-section">
+            <h2>Mi Horario</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día de la Semana</th>
+                        <th>Actividades</th>
+                        <th>Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Asistir a las clases del bootcamp</td>
+                        <td>6:00 p.m. - 10:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Realizar actividades de prácticas para mejorar habilidades</td>
+                        <td>10:00 a.m. - 11:45 a.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="contact-section">
+            <h2>Formulario de Contacto</h2>
+            <form onsubmit="validar(); return false;">
+                <fieldset>
+                    <legend>Contáctame</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Mensaje:</label>
+                        <textarea id="text" name="contacto" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Sígueme:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/everson-de-armas-5051b1200/" target="_blank">
+                <img src="in.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.behance.net/eversondearmas" target="_blank">
+                <img src="BE.png" alt="Behance">
+            </a>
+            <a href="https://www.instagram.com/de_armas28/" target="_blank">
+                <img src="ig.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/Everson28" target="_blank">
+                <img src="git.png" alt="github">
+            </a>
+        </div>
+    </footer>
+
+    <script src="interaccion.js"></script>
+</body>
+</html>
